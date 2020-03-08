@@ -125,7 +125,7 @@ IoT_Error_t aws_iot_shadow_init_json_document(char *pJsonDocument, size_t maxSiz
 
 }
 
-IoT_Error_t aws_iot_shadow_add_desired(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint8_t count, ...) {
+IoT_Error_t aws_iot_shadow_add_desired(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint32_t count, ...) {
 	IoT_Error_t ret_val = SUCCESS;
 	size_t tempSize = 0;
 	int8_t i;
@@ -194,7 +194,7 @@ IoT_Error_t aws_iot_shadow_add_desired(char *pJsonDocument, size_t maxSizeOfJson
 	return ret_val;
 }
 
-IoT_Error_t aws_iot_shadow_add_reported(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint8_t count, ...) {
+IoT_Error_t aws_iot_shadow_add_reported(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint32_t count, ...) {
 	IoT_Error_t ret_val = SUCCESS;
 
 	int8_t i;

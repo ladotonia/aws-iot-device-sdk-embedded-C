@@ -98,7 +98,7 @@ IoT_Error_t aws_iot_shadow_init_json_document(char *pJsonDocument, size_t maxSiz
  * @param count total number of arguments(jsonStruct_t object) passed in the arguments
  * @return An IoT Error Type defining if the buffer was null or the entire string was not filled up
  */
-IoT_Error_t aws_iot_shadow_add_reported(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint8_t count, ...);
+IoT_Error_t aws_iot_shadow_add_reported(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint32_t count, ...);
 
 /**
  * @brief Add the desired section of the JSON document of jsonStruct_t
@@ -114,7 +114,7 @@ IoT_Error_t aws_iot_shadow_add_reported(char *pJsonDocument, size_t maxSizeOfJso
  * @param count total number of arguments(jsonStruct_t object) passed in the arguments
  * @return An IoT Error Type defining if the buffer was null or the entire string was not filled up
  */
-IoT_Error_t aws_iot_shadow_add_desired(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint8_t count, ...);
+IoT_Error_t aws_iot_shadow_add_desired(char *pJsonDocument, size_t maxSizeOfJsonDocument, uint32_t count, ...);
 
 /**
  * @brief Finalize the JSON document with Shadow expected client Token.
